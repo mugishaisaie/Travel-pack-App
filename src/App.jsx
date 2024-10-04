@@ -25,7 +25,8 @@ function App() {
   }
 
   function handleClearList(){
-    setItems([])
+    const confirmed = confirm('Are you sure you want to Delete All Items?')
+   if(confirmed) setItems([])
     
   }
 
